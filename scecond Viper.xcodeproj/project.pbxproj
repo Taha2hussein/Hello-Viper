@@ -16,6 +16,11 @@
 		00004FA424A0C37100DE93E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00004FA224A0C37100DE93E0 /* LaunchScreen.storyboard */; };
 		00004FAF24A0C37200DE93E0 /* scecond_ViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00004FAE24A0C37200DE93E0 /* scecond_ViperTests.swift */; };
 		00004FBA24A0C37200DE93E0 /* scecond_ViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00004FB924A0C37200DE93E0 /* scecond_ViperUITests.swift */; };
+		00004FCC24A0DA5A00DE93E0 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00004FCB24A0DA5A00DE93E0 /* HomeModel.swift */; };
+		00004FCE24A0DA8E00DE93E0 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00004FCD24A0DA8E00DE93E0 /* HomePresenter.swift */; };
+		00004FD024A0DA9E00DE93E0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00004FCF24A0DA9E00DE93E0 /* HomeInteractor.swift */; };
+		00004FD224A0DAAC00DE93E0 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00004FD124A0DAAC00DE93E0 /* HomeRouter.swift */; };
+		00004FD524A0DC1700DE93E0 /* HomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00004FD424A0DC1700DE93E0 /* HomeModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		00004FB524A0C37200DE93E0 /* scecond ViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "scecond ViperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00004FB924A0C37200DE93E0 /* scecond_ViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scecond_ViperUITests.swift; sourceTree = "<group>"; };
 		00004FBB24A0C37200DE93E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00004FCB24A0DA5A00DE93E0 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		00004FCD24A0DA8E00DE93E0 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		00004FCF24A0DA9E00DE93E0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		00004FD124A0DAAC00DE93E0 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		00004FD424A0DC1700DE93E0 /* HomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +111,12 @@
 		00004F9324A0C36C00DE93E0 /* scecond Viper */ = {
 			isa = PBXGroup;
 			children = (
-				00004F9424A0C36C00DE93E0 /* AppDelegate.swift */,
-				00004F9624A0C36C00DE93E0 /* SceneDelegate.swift */,
-				00004F9824A0C36C00DE93E0 /* ViewController.swift */,
-				00004F9A24A0C36C00DE93E0 /* Main.storyboard */,
-				00004FA024A0C37100DE93E0 /* Assets.xcassets */,
-				00004FA224A0C37100DE93E0 /* LaunchScreen.storyboard */,
+				00004FD324A0DB5200DE93E0 /* Entity */,
+				00004FCA24A0D9CD00DE93E0 /* controller */,
+				00004FC924A0D9B100DE93E0 /* configuration */,
+				00004FC824A0D9AC00DE93E0 /* view */,
+				00004FC724A0D98800DE93E0 /* viper Modules */,
 				00004FA524A0C37200DE93E0 /* Info.plist */,
-				00004F9D24A0C36C00DE93E0 /* scecond_Viper.xcdatamodeld */,
 			);
 			path = "scecond Viper";
 			sourceTree = "<group>";
@@ -129,6 +137,53 @@
 				00004FBB24A0C37200DE93E0 /* Info.plist */,
 			);
 			path = "scecond ViperUITests";
+			sourceTree = "<group>";
+		};
+		00004FC724A0D98800DE93E0 /* viper Modules */ = {
+			isa = PBXGroup;
+			children = (
+				00004FCD24A0DA8E00DE93E0 /* HomePresenter.swift */,
+				00004FCF24A0DA9E00DE93E0 /* HomeInteractor.swift */,
+				00004FD124A0DAAC00DE93E0 /* HomeRouter.swift */,
+				00004FD424A0DC1700DE93E0 /* HomeModuleBuilder.swift */,
+			);
+			path = "viper Modules";
+			sourceTree = "<group>";
+		};
+		00004FC824A0D9AC00DE93E0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				00004F9A24A0C36C00DE93E0 /* Main.storyboard */,
+				00004FA224A0C37100DE93E0 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		00004FC924A0D9B100DE93E0 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				00004F9424A0C36C00DE93E0 /* AppDelegate.swift */,
+				00004F9624A0C36C00DE93E0 /* SceneDelegate.swift */,
+				00004FA024A0C37100DE93E0 /* Assets.xcassets */,
+				00004F9D24A0C36C00DE93E0 /* scecond_Viper.xcdatamodeld */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		00004FCA24A0D9CD00DE93E0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				00004F9824A0C36C00DE93E0 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		00004FD324A0DB5200DE93E0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				00004FCB24A0DA5A00DE93E0 /* HomeModel.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +320,12 @@
 				00004F9924A0C36C00DE93E0 /* ViewController.swift in Sources */,
 				00004F9524A0C36C00DE93E0 /* AppDelegate.swift in Sources */,
 				00004F9F24A0C36C00DE93E0 /* scecond_Viper.xcdatamodeld in Sources */,
+				00004FD524A0DC1700DE93E0 /* HomeModuleBuilder.swift in Sources */,
+				00004FCE24A0DA8E00DE93E0 /* HomePresenter.swift in Sources */,
+				00004FCC24A0DA5A00DE93E0 /* HomeModel.swift in Sources */,
+				00004FD224A0DAAC00DE93E0 /* HomeRouter.swift in Sources */,
 				00004F9724A0C36C00DE93E0 /* SceneDelegate.swift in Sources */,
+				00004FD024A0DA9E00DE93E0 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
